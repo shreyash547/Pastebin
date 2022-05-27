@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    /* background-color: black; */
+    background: linear-gradient(to right, rgb(2, 38, 48), rgb(2, 18, 30));
+
+}
+
+nav {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.8);
+    /* background-color: white; */
+    /* border: 1px solid red; */
+    backdrop-filter: blur(15px);
+    background: transparent;
+    color: white;
+
+}
+
+.textform {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 42px;
+}
+
+.textform textarea {
+    width: 500px;
+    height: 150px;
+    font-size: 25px;
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn {
+    font-size: 15px;
+    border: none;
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 5px;
+    color: rgb(89, 216, 255);
+    border: 2px solid rgb(89, 216, 255);
+}
+
+.btn:hover {
+    background-color: rgb(89, 216, 255);
+    color: white;
+}
+
+.notes {
+    /* border: 2px solid rgba(89, 216, 255, 0.1); */
+    border-radius: 0.3rem;
+    margin: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px 1px rgba(40, 208, 255, 0.3);
+}
+.note {
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 254, 245, 0.5);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+}
+.note:hover {
+    box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.4);
+}
+.note span {
+    font-size: 1rem;
+}

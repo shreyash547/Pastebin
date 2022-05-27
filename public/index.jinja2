@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SE PROJECT</title>
+    <link rel="stylesheet" href={{ url_for('static', filename="style.css") }}>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<nav>
+    <h2>
+        Paste Bin
+    </h2>
+</nav>
+<form action="#">
+    <div class="textform">
+        <textarea name="" id="input" cols="30" rows="10"></textarea>
+    </div>
+</form>
+<div class="button-box">
+    <button class="btn" id="submit">
+        Submit
+    </button>
+    <button class="btn">
+        Upload File
+    </button>
+    <button class="btn">
+        Upload Link
+    </button>
+</div>
+<div class="notes">
+
+    {% for note in notes %}
+    <div class="note">
+        {{ note.text }}
+    <span><i class="fa-solid fa-xmark remove" id={{ note._id }}></i></span>
+    </div>
+    {% endfor %}
+</div>
+<script src={{ url_for('static',filename="main.js") }}></script>
+</body>
+</html>
