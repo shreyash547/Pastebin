@@ -1,5 +1,3 @@
-from distutils.log import debug
-from unicodedata import name
 from bson import ObjectId
 from flask import Flask, make_response, render_template, request
 from pymongo import MongoClient
